@@ -26,9 +26,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/img/hero-mobile.webp" type="image/webp" fetchpriority="high">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="preload" as="image" href="assets/img/hero2-desktop.webp" type="image/webp" media="(min-width: 761px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero2-mobile.webp" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
 
   <!--
     RASTREAMENTO DE ANÚNCIOS
@@ -118,30 +119,23 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow fade">Ativador natural de perda de gordura</p>
-          <h1 class="fade">Transforme seu corpo <em>definitivamente</em>.</h1>
-          <p class="lead fade">O ativador natural que já ajudou centenas de pessoas a eliminar gordura corporal. Laranja Moro, Guaraná, Cromo e Vitaminas A, C e E em <strong>1 cápsula por dia</strong> para dar uma carga no seu metabolismo.</p>
-          <ul class="checks fade">
-            <li>Notificado na ANVISA</li>
-            <li>Sem glúten · fabricado no Brasil</li>
-            <li>Frete grátis e 12x sem juros</li>
-          </ul>
-          <div class="hero__cta fade">
-            <a href="#ofertas" class="btn">Quero começar agora</a>
-            <p class="social-proof"><span class="stars" aria-hidden="true">★★★★★</span> Mais de <strong>6 mil</strong> clientes</p>
-          </div>
-          <dl class="stats fade">
-            <div><dt>1</dt><dd>cápsula por dia</dd></div>
-            <div><dt>30</dt><dd>dias por frasco</dd></div>
-            <div><dt>+6 mil</dt><dd>clientes</dd></div>
-          </dl>
+      <div class="container hero__copy">
+        <p class="eyebrow fade">Ativador natural de perda de gordura</p>
+        <h1 class="fade">Transforme seu corpo <span>definitivamente</span></h1>
+        <p class="lead fade">O ativador natural que já ajudou centenas de pessoas a eliminar gordura corporal. <strong>1 cápsula por dia</strong> para dar uma carga no seu metabolismo.</p>
+        <div class="hero__cta fade">
+          <a href="#ofertas" class="btn btn--pill">Quero começar agora</a>
         </div>
-        <figure class="hero__media fade">
-          <img src="assets/img/hero-mobile.webp" alt="Frasco de Violine Shape sobre pedestal de pedra em luz natural" width="900" height="844" fetchpriority="high">
-        </figure>
+        <ul class="hero__checks fade">
+          <li>Notificado na ANVISA</li>
+          <li>Sem glúten</li>
+          <li>Frete grátis · 12x sem juros</li>
+        </ul>
       </div>
+      <picture class="hero__art">
+        <source media="(max-width: 760px)" srcset="assets/img/hero2-mobile.webp" width="900" height="1125">
+        <img src="assets/img/hero2-desktop.webp" alt="Três frascos de Violine Shape com mulher sorridente em roupa de treino" width="1672" height="941" fetchpriority="high">
+      </picture>
     </section>
 
     <!-- FAIXA DE CONFIANÇA -->
