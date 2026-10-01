@@ -14,4 +14,4 @@ python3 -m http.server 8099 --directory site
 
 ## Deploy
 
-Vercel com *Root Directory* = `site` (sem build).
+Vercel: `vercel.json` publica a pasta `site/` (sem build). Cada push na `main` faz deploy automático.
