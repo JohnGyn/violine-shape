@@ -2,8 +2,7 @@
 
 Site estático (HTML, CSS e JS puros) em `site/`.
 
-- `site/index.html` — V1, visual claro/nude premium
-- `site/cientifica.html` — V2, estilo científico/agressivo (baseado no site atual)
+- `site/index.html` — landing page
 - `imagens-geradas-codex/` — PNGs originais gerados com o Codex CLI
 
 ## Rodar localmente
