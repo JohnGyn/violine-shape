@@ -26,10 +26,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/img/hero2-desktop.webp" type="image/webp" media="(min-width: 761px)" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/img/hero2-mobile.webp" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero-produto.webp" type="image/webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=15">
 
   <!--
     RASTREAMENTO DE ANÚNCIOS
@@ -51,7 +50,7 @@
         "logo": "https://violineshape.com.br/assets/img/apple-touch-icon.png",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+55-19-99393-2103",
+          "telephone": "+55-19-99206-1661",
           "contactType": "customer service",
           "areaServed": "BR",
           "availableLanguage": "Portuguese"
@@ -119,23 +118,14 @@
 
     <!-- HERO -->
     <section class="hero">
+      <img class="hero__planta" src="assets/img/hero-planta.webp" alt="" width="600" height="900" aria-hidden="true">
+      <img class="hero__mulher" src="assets/img/hero-mulher.webp" alt="Mulher sorridente em roupa de treino" width="614" height="1050">
       <div class="container hero__copy">
-        <p class="eyebrow fade">Ativador natural de perda de gordura</p>
         <h1 class="fade">Transforme seu corpo <span>definitivamente</span></h1>
         <p class="lead fade">O ativador natural que já ajudou centenas de pessoas a eliminar gordura corporal. <strong>1 cápsula por dia</strong> para dar uma carga no seu metabolismo.</p>
-        <div class="hero__cta fade">
-          <a href="#ofertas" class="btn btn--pill">Quero começar agora</a>
-        </div>
-        <ul class="hero__checks fade">
-          <li>Notificado na ANVISA</li>
-          <li>Sem glúten</li>
-          <li>Frete grátis · 12x sem juros</li>
-        </ul>
+        <a href="#ofertas" class="btn btn--pill fade">Quero começar agora</a>
+        <img class="hero__produto fade" src="assets/img/hero-produto.webp" alt="Três frascos de Violine Shape sobre a mesa com cápsulas douradas" width="1000" height="686" fetchpriority="high">
       </div>
-      <picture class="hero__art">
-        <source media="(max-width: 760px)" srcset="assets/img/hero2-mobile.webp" width="900" height="1125">
-        <img src="assets/img/hero2-desktop.webp" alt="Três frascos de Violine Shape com mulher sorridente em roupa de treino" width="1672" height="941" fetchpriority="high">
-      </picture>
     </section>
 
     <!-- FAIXA DE CONFIANÇA -->
@@ -181,7 +171,7 @@
     <!-- FAIXA DE DESTAQUE -->
     <section class="band" aria-label="Destaque">
       <div class="container band__inner">
-        <p class="band__text fade">1 cápsula <span>·</span> após o café <span>·</span> 4 e-books de bônus <span>·</span> frete grátis</p>
+        <p class="band__text fade"><span>1 cápsula após o café</span><span>4 e-books de bônus</span><span>Frete grátis</span></p>
         <a href="#ofertas" class="btn btn--light fade">Escolher meu kit</a>
       </div>
     </section>
@@ -363,7 +353,7 @@
         <div class="offers">
           <article class="offer fade">
             <p class="offer__tag">Tratamento 1 mês</p>
-            <img src="assets/img/kit-1.webp" alt="1 frasco de Violine Shape" width="700" height="700" loading="lazy" decoding="async">
+            <img src="assets/img/oferta-1.webp" alt="1 frasco de Violine Shape" width="429" height="780" loading="lazy" decoding="async">
             <h3>1 frasco</h3>
             <ul class="offer__list">
               <li>30 cápsulas</li>
@@ -377,7 +367,7 @@
 
           <article class="offer fade">
             <p class="offer__tag">Tratamento 2 meses</p>
-            <img src="assets/img/kit-2.webp" alt="2 frascos de Violine Shape" width="700" height="700" loading="lazy" decoding="async">
+            <img src="assets/img/oferta-2.webp" alt="2 frascos de Violine Shape + 4 e-books de bônus" width="900" height="570" loading="lazy" decoding="async">
             <h3>2 frascos <span>+ 4 e-books</span></h3>
             <ul class="offer__list">
               <li>60 cápsulas · R$ 193,50 por frasco</li>
@@ -391,7 +381,7 @@
           <article class="offer offer--featured fade">
             <p class="offer__badge">Melhor custo-benefício</p>
             <p class="offer__tag">Tratamento 3 meses</p>
-            <img src="assets/img/kit-3.webp" alt="3 frascos de Violine Shape" width="700" height="700" loading="lazy" decoding="async">
+            <img src="assets/img/oferta-3.webp" alt="3 frascos de Violine Shape + 4 e-books de bônus" width="900" height="546" loading="lazy" decoding="async">
             <h3>3 frascos <span>+ 4 e-books</span></h3>
             <ul class="offer__list">
               <li>90 cápsulas · R$ 165,67 por frasco</li>
@@ -474,7 +464,7 @@
           <p class="fade">Escolha seu kit com frete grátis e comece com os 4 e-books do programa completo.</p>
           <div class="final__actions fade">
             <a href="#ofertas" class="btn">Escolher meu kit</a>
-            <a href="https://wa.me/5519993932103?text=Ol%C3%A1!%20Visitei%20o%20site%20do%20Violine%20Shape%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn--ghost js-whats" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a href="https://wa.me/5519992061661?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Violine%20Shape%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn--ghost js-whats" target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
         </div>
       </div>
@@ -489,7 +479,7 @@
           <a href="#formula">Fórmula</a>
           <a href="#ofertas">Kits</a>
           <a href="#duvidas">Dúvidas</a>
-          <a href="https://wa.me/5519993932103" class="js-whats" target="_blank" rel="noopener">Atendimento</a>
+          <a href="https://wa.me/5519992061661?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Violine%20Shape%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="js-whats" target="_blank" rel="noopener">Atendimento</a>
         </nav>
       </div>
       <div class="footer__legal">
@@ -507,7 +497,7 @@
     <a href="#ofertas" class="btn btn--sm" tabindex="-1">Ver kits</a>
   </div>
 
-  <a class="whats-float js-whats" href="https://wa.me/5519993932103?text=Ol%C3%A1!%20Visitei%20o%20site%20do%20Violine%20Shape%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <a class="whats-float js-whats" href="https://wa.me/5519992061661?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Violine%20Shape%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.5 4.9 2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5l-.6-.3Z"/></svg>
   </a>
 

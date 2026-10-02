@@ -1,0 +1,79 @@
+/* ==========================================================
+   Violine Shape — páginas de obrigado (/obrigado/*)
+   Mesma identidade da landing: Montserrat, creme, cobre e café.
+   ========================================================== */
+
+:root {
+  --cream: #f8f3ee;
+  --cream-2: #f1e7df;
+  --blush: #ead8cc;
+  --copper: #b0522f;
+  --copper-dark: #8c3d20;
+  --espresso: #2a1d19;
+  --ink: #2f2420;
+  --muted: #6b5a53;
+  --line: #e4d6cc;
+  --white: #fffdfb;
+  --sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--ink); background: linear-gradient(180deg, #fbf3ec 0%, #f9ebdf 100%); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Topo */
+.ty-nav { width: min(1180px, 100% - 40px); margin: 0 auto; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.ty-logo { font-weight: 800; font-size: 1.35rem; letter-spacing: -.02em; color: var(--espresso); text-decoration: none; }
+.ty-logo span { margin-left: .22em; }
+.ty-logo i { font-style: normal; color: var(--copper); }
+.ty-secure { display: flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 700; color: var(--muted); }
+.ty-secure svg, .ty-step-icon svg, .ty-badge svg, .ty-cta svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ty-secure svg { width: 18px; height: 18px; color: var(--copper); }
+
+/* Conteúdo */
+.ty-hero { width: min(1180px, 100% - 40px); margin: auto; padding: 24px 0 64px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+.ty-content { min-width: 0; }
+.ty-badge { width: 60px; height: 60px; margin-bottom: 22px; display: grid; place-items: center; border-radius: 50%; }
+.ty-badge svg { width: 28px; height: 28px; }
+.ty-badge--approved { color: #fff; background: linear-gradient(180deg, #c4643d 0%, var(--copper) 55%, var(--copper-dark) 100%); box-shadow: 0 12px 30px -8px rgba(140, 61, 32, .55); }
+.ty-badge--pending { color: var(--copper); background: var(--white); box-shadow: 0 0 0 1px var(--line); }
+.ty-eyebrow { margin: 0 0 12px; color: var(--copper); font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.ty-content h1 { margin: 0; color: var(--espresso); font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 900; line-height: 1.05; letter-spacing: -.02em; text-transform: uppercase; }
+.ty-content h1 span { color: var(--copper); }
+.ty-lead { max-width: 560px; margin: 18px 0 28px; color: var(--muted); font-size: 1.05rem; }
+
+.ty-steps { margin: 0 0 24px; padding: 0; display: grid; gap: 12px; list-style: none; }
+.ty-steps li { padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+.ty-step-icon { width: 42px; height: 42px; flex: none; display: grid; place-items: center; border-radius: 50%; color: var(--copper); background: var(--cream-2); }
+.ty-step-icon svg { width: 20px; height: 20px; }
+.ty-steps strong { display: block; color: var(--espresso); font-size: .95rem; }
+.ty-steps p { margin: 3px 0 0; color: var(--muted); font-size: .88rem; line-height: 1.5; }
+
+.ty-note { margin: 0 0 26px; padding: 12px 16px; border-left: 3px solid var(--copper); border-radius: 0 10px 10px 0; background: var(--cream-2); font-size: .9rem; }
+
+.ty-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 58px; padding: .9em 2em; border-radius: 999px;
+  color: #fff; font-weight: 800; font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; text-decoration: none; white-space: nowrap;
+  background: linear-gradient(180deg, #c4643d 0%, var(--copper) 55%, var(--copper-dark) 100%);
+  box-shadow: 0 6px 0 #6f3119, 0 16px 28px -12px rgba(140, 61, 32, .7);
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.ty-cta:hover { transform: translateY(2px); box-shadow: 0 4px 0 #6f3119, 0 10px 20px -10px rgba(140, 61, 32, .7); }
+.ty-cta:focus-visible { outline: 3px solid #c9a35a; outline-offset: 3px; }
+.ty-cta svg { width: 18px; height: 18px; }
+
+.ty-visual { display: grid; place-items: center; padding: 30px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #f3d9c8 0%, rgba(249, 235, 223, 0) 70%); }
+.ty-visual img { width: min(100%, 460px); -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 16%, #000 84%, transparent 100%), linear-gradient(to bottom, #000 78%, transparent 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(to right, transparent 0%, #000 16%, #000 84%, transparent 100%), linear-gradient(to bottom, #000 78%, transparent 100%); mask-composite: intersect; }
+
+.ty-footer { margin-top: auto; padding: 22px; color: #bcaca2; background: var(--espresso); font-size: .78rem; text-align: center; }
+
+@media (max-width: 860px) {
+  .ty-hero { grid-template-columns: 1fr; gap: 18px; padding: 8px 0 48px; }
+  .ty-visual { order: -1; padding: 0; aspect-ratio: auto; background: none; }
+  .ty-visual img { width: min(80%, 320px); }
+  .ty-cta { width: 100%; padding: .9em 1em; font-size: .78rem; letter-spacing: .02em; white-space: normal; text-align: center; }
+  .ty-secure span { display: none; }
+}
