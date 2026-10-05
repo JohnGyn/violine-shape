@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.violineshape.com.br/sitemap.xml
+Sitemap: https://violineshape.com.br/sitemap.xml
