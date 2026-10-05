@@ -3,3 +3,4 @@ site-atual-media/
 .vercel
 .DS_Store
 .env*
+imagens-geradas-codex/log-*.txt

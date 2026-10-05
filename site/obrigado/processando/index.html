@@ -14,8 +14,25 @@
   <!-- RASTREAMENTO: cole aqui o mesmo Google Tag Manager / Meta Pixel da landing.
        Na página de pagamento aprovado, o obrigado.js dispara "Purchase" (Pixel) e "purchase" (dataLayer).
        Para enviar o valor, configure a Braip para redirecionar com ?value=VALOR. -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2147632998968524');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 <body data-status="pending">
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=2147632998968524&ev=PageView&noscript=1"
+  /></noscript>
   <header class="ty-nav">
     <a class="ty-logo" href="/" aria-label="Violine Shape — início">Violine<span>Shape<i>.</i></span></a>
     <div class="ty-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>Compra segura</span></div>
